@@ -1,0 +1,37 @@
+* {
+    background-color: pink;
+    color: white;
+    text-align: center;
+}
+
+header, main, footer {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+header h1:hover{
+    color: black;
+}
+
+header h1 {
+    font-family: sans-serif;
+}
+
+li {
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+img {
+    width: 50%;
+}
+
+h2 {
+    border: 15px;
+}
+footer p {
+    color: black;
+    font-family: sans-serif;
+}
