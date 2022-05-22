@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +9,7 @@ nav a {
     text-align: center; 
     color: #19EDF0;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg {
@@ -32,10 +35,26 @@ main section {
 
 body {
     background-color: #005F73;
+    font-family: Roboto;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
     background-color: #bb3e03;
+}
+
+#logo_link {
+    padding: 5px;
 }
 
 nav a:hover {
@@ -44,31 +63,50 @@ nav a:hover {
 }
 
 .book, .join {
-    background-color: #bb3e03;
-    color: #19EDF0;
+    background-color: #10badc;
+    color: #ff5100;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
-    background-color: #bb3e03;
-    color: #19EDF0;
+    background-color: #19EDF0;
+    color: #bb3e03;
     
 }
 
 .msg {
     background-color: #bb3e03;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: #19EDF0;
+    font-family: Oswald;
 }
 
 .msg p {
     color: #19EDF0;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.card-img {
+    border: 10px solid Black;
+}
+
+.rivers-card, .camping-card, .rapids-card  {
+    margin: 200px 0;
 }
 
 footer {
     background-color: #bb3e03;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3 {
@@ -88,8 +126,15 @@ footer h3:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .home-title {
     color: #19EDF0;
+    font-size: 2em;
+    font-family: Oswald;
+    margin-top: 10px;
 }
 
 h4 {
@@ -98,5 +143,5 @@ h4 {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
-                
