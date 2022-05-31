@@ -1,0 +1,15 @@
+nav {
+    justify-content:space-around;
+    display: flex;
+}
+
+a {
+    margin: 20px;
+    color:crimson;
+    font-size:1.25em;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
