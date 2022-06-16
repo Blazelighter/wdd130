@@ -3,6 +3,15 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap');
 
+
+@font-face {
+  font-family: 'hylia_serif_betaregular';
+  src: url('../fonts/hyliaserifbeta-regular-webfont.woff2') format('woff2'),
+       url('../fonts/hyliaserifbeta-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #c20a23   ;
@@ -11,7 +20,7 @@ Fonts are separated by a | */
   --accent2-color: white;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "Kdam Thmor Pro";
+  --heading-font: "hylia_serif_betaregular";
   --paragraph-font: "Roboto", Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
