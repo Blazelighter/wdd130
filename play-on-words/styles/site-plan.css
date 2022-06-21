@@ -4,6 +4,7 @@ Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap');
 
 
+/* Hylia Serif Font created by Omni Jacala and can be found here https://curiomatic.com/fonts/hylia-serif */
 @font-face {
   font-family: 'hylia_serif_betaregular';
   src: url('../fonts/hyliaserifbeta-regular-webfont.woff2') format('woff2'),
