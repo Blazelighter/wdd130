@@ -1,0 +1,38 @@
+/* Hylia Serif Font created by Omni Jacala and can be found here https://curiomatic.com/fonts/hylia-serif */
+@font-face {
+    font-family: 'hylia_serif_betaregular';
+    src: url('../fonts/hyliaserifbeta-regular-webfont.woff2') format('woff2'),
+         url('../fonts/hyliaserifbeta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    text-align:center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #c20a23;
+    display: grid;
+    grid-template-columns: 200px auto;
+    height: 70px;
+    
+}
+
+header img {
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+
+h1, h2, h3 {
+    font-family: hylia_serif_betaregular;
+}
