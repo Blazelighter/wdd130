@@ -23,48 +23,63 @@
         </header>
         <main class="genre-grid">
             <h1>Genres</h1>
-            <h2>Knowing what you like</h2>
-            <section class="Genre 1">
-                <h2>Genre Name</h2>
-                <p>
-                    Platformers: A genre based around the maneuvering of the character through an environment. 
-                </p>
-                <h3>Examples:</h3>
-                <ol>
-                    <li>Mario Bros.</li>
-                    <li>Sonic</li>
-                    <li>Celeste</li>
-                </ol>
+            <h2 id="subtitle">Knowing what you like</h2>
+            <button class="GenreName">Platformers</button>
+            <section class="panel">
                 <img src="images/celeste_windy_screenshot.jpg" alt="Celeste">
-            </section>
-            <section class="Genre 2">
-                <h2>Fighting Game</h2>
-                <p> 
-                    A game genre defined by competitive player vs. player 1 on 1 gameplay.
+                <p>
+                    A genre based around the maneuvering of the character through an environment.
                 </p>
                 <h3>Examples:</h3>
-                <ol>                   
-                    <li>Street Fighter</li>
-                    <li>Tekken</li>
-                    <li>Guilty Gear</li>
-                </ol>
-                <img src="images/arcade_stick.jpg" alt="#">
+                <li>Mario Bros.</li>
+                <li>Sonic</li>
+                <li>Celeste</li>
             </section>
-            <section class="Genre 3">
-                <h2>Metroidvania</h2>
+            <button class="GenreName">Fighting Games</button>
+            <section class="panel">
+                <img src="images/arcade_stick.jpg" alt="arcade stick">
+                <p> 
+                    A game genre defined by competitive player vs. player 1 on 1 gameplay with attacks that
+                    combo into one another.
+                </p>
+                <h3>Examples:</h3>                 
+                <li>Street Fighter</li>
+                <li>Tekken</li>
+                <li>Guilty Gear</li>
+            </section>
+            <button class="GenreName">Metroidvanias</button>
+            <section class="panel">
+                <img src="images/quick_map.jpg" alt="Hollow Knight map">
                 <p>A style of game which largely focuses on exploring an interconnected maze-like world, 
                     while gaining abilities that allow fur further exploration. The term itself comes from 
                     the two game series Metroid and Castlevania, which are some of the earliest examples 
                     of this style of game.
                 </p>
-                <h3>Examples:</h3>
-                <ol>        
-                    <li>Metroid</li>
-                    <li>Hollow Knight</li>
-                    <li>Ori and the Blind Forest</li>
-                </ol>
-                <img src="images/quick_map.jpg" alt="Hollow Knight map">
+                <h3>Examples:</h3>       
+                <li>Metroid</li>
+                <li>Hollow Knight</li>
+                <li>Ori and the Blind Forest</li>
             </section>
+            <script>
+                var acc = document.getElementsByClassName("GenreName");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
+                }
+            </script>
         </main>
         <footer>
             <h3>Play on Words&copy; 2022 - Todd Wahlquist</h3>

@@ -8,7 +8,7 @@
   }
 
 * {
-    text-align:center;
+    text-align: center;
     font-family: Roboto;
     margin: 0;
     padding: 0;
@@ -18,7 +18,6 @@ header {
     background-color: #c20a23;
     display: grid;
     grid-template-columns: 200px auto;
-    
 }
 
 header img {
@@ -62,12 +61,6 @@ footer a {
     background-color: #447a9c;
 }
 
-
-#content {
-    margin: 15px;
-}
-
-
 h1, h2, h3 {
     font-family: hylia_serif_betaregular;
     margin: 30px;
@@ -100,4 +93,50 @@ h1, h2, h3 {
     grid-column: 5/6;
     width: 100%;
 }
+
+.genre-grid {
+    margin: 50px;
+}
+
+.genre-grid p, .genre-grid h3, .genre-grid li {
+    text-align: left;
+    margin: 15px;
+}
+
+.genre-grid img {
+    float: right;
+    width: 500px;
+    margin: 20px;
+}
+
+#subtitle {
+    font-size: 1.25em;
+    font-family: Roboto;
+}
+
+.GenreName {
+    background-color: #150578;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1.5em;
+    font-family: hylia_serif_betaregular;
+  }
+  
+  .active, .GenreName:hover {
+    background-color: #447a9c;
+    color: black;
+  }
+  
+  .panel {
+    padding: 18px;
+    background-color: #447a9c;
+    display: none;
+    overflow: hidden;
+  }
 
