@@ -14,7 +14,7 @@
     font-family: Roboto;
     margin: 0;
     padding: 0;
-    max-width: 1200px;
+    max-width: 1600px;
 }
 
 header {
@@ -117,7 +117,7 @@ h1, h2, h3 {
     font-family: Roboto;
 }
 
-.GenreName {
+.genre-class, .term-class {
     background-color: #150578;
     color: white;
     cursor: pointer;
@@ -129,17 +129,28 @@ h1, h2, h3 {
     transition: 0.4s;
     font-size: 1.5em;
     font-family: hylia_serif_betaregular;
-  }
+}
   
-  .active, .GenreName:hover {
+.active, .genre-class:hover, .term-class:hover {
     background-color: #447a9c;
     color: black;
-  }
+}
   
-  .panel {
+.panel {
     padding: 18px;
     background-color: #447a9c;
     display: none;
     overflow: hidden;
-  }
+}
 
+.term-grid {
+    margin: 50px;
+}
+
+.term-grid p, .term-grid h3 {
+    text-align: left;
+} 
+
+.term-grid .panel {
+    background-color: white;
+}

@@ -15,8 +15,8 @@
             </a>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#">Genres</a>
-                <a href="#">Terms</a>
+                <a href="genres.html">Genres</a>
+                <a href="terms.html">Terms</a>
                 <a href="site-plan.html">Site Plan</a>
                 <a href="concactus.html">Contact Us</a>
             </nav>
@@ -24,8 +24,8 @@
         <main class="term-grid">
             <h1>Words to Know</h1>
             <h3>Standard words used in basic communication</h3>
-            <section class="general-terms">
-                <h2>General Terms</h2>
+            <button class="term-class">General Terms</button>
+            <section class="panel">
                 <h3>Buff/Nerf</h3>
                 <p>
                     A buff is used to refer to when a character receives a strengthened attribute with a newer 
@@ -50,8 +50,8 @@
                     These are traditionally visualized using boxes, but other shapes can be used as well.
                 </p>
             </section>
-            <section class="acronyms">
-                <h2>Acronyms</h2>
+            <button class="term-class">Acronyms</button>
+            <section class="panel">
                 <h3>HP</h3>
                 <p>
                     Hit Points. This refers to the amount of damage a character or object can take before becoming 
@@ -81,6 +81,26 @@
                     the more frames per second, the smoother the gameplay looks and feels.
                 </p>
             </section>
+            <script>
+                var acc = document.getElementsByClassName("term-class");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    /* Toggle between adding and removing the "active" class,
+                    to highlight the button that controls the panel */
+                    this.classList.toggle("active");
+
+                    /* Toggle between hiding and showing the active panel */
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    } else {
+                    panel.style.display = "block";
+                    }
+                });
+                }
+            </script>
             <div id="image-box">
                 <img src="images/arcade_stick.jpg" alt="arcade stick">
                 <img src="images/OCTOPATH_TRAVELER_Screenshot_Tressa_2.jpg" alt="RPG Octopath Traveler">
